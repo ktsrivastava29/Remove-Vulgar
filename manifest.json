@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Remove Vulgar",
+    "description": "This plugin is designed to eliminate any vulgar words that may be present. This will assist in keeping a small youngster away from a potentially harmful situation.",
+    "version": "1.0.0",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+
+    "content_scripts": [
+        {
+            "matches" : ["<all_urls>"],
+            "js": ["script.js"]
+        }
+    ]
+}
